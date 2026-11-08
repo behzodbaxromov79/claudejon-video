@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<title>Claudejon horror</title>
+<link rel="stylesheet" href="/core/fonts/fonts.css">
+<style>
+  html, body { margin: 0; height: 100%; background: #0b0a10; overflow: hidden; }
+  canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  #ui { position: absolute; inset: 0; pointer-events: none; font-family: 'Fredoka', sans-serif; color: #fff; }
+  .title { position: absolute; left: 6%; right: 6%; top: 9%; text-align: center; }
+  .title .k { font-size: 44px; font-weight: 600; color: #ff6b6b; letter-spacing: 3px; text-transform: uppercase; }
+  .title .t { font-family: 'Lilita One', sans-serif; font-size: 92px; line-height: 1.04; margin-top: 10px;
+              text-shadow: 0 6px 0 rgba(0,0,0,.6), 0 0 30px rgba(255,40,40,.45); }
+  .timer { position: absolute; right: 6%; top: 3.2%; font-family: 'Lilita One', sans-serif; font-size: 58px; letter-spacing: 3px;
+           background: rgba(10,4,6,.75); border: 3px solid #ff3b3b; border-radius: 18px; padding: 8px 22px; color: #ff6b6b;
+           box-shadow: 0 0 24px rgba(255,40,40,.35); }
+  .timer.hot { color: #fff; background: #c81e1e; }
+  .sub { position: absolute; left: 6%; right: 6%; top: 70%; text-align: center; font-size: 66px; font-weight: 700; line-height: 1.2;
+         text-shadow: 0 5px 0 rgba(0,0,0,.7), 0 0 22px rgba(0,0,0,.8); }
+  .sub span { display: inline-block; margin: 0 .24em; transform-origin: 50% 70%; }
+  .sub span.hl { color: #ffd23b; }
+  .sub span.on { transform: scale(1.06); color: #ff5b5b; }
+  .choice { position: absolute; left: 6%; right: 6%; top: 18%; text-align: center; }
+  .choice .q { font-family: 'Lilita One', sans-serif; font-size: 104px; text-shadow: 0 6px 0 rgba(0,0,0,.6); }
+  .choice .ab { display: flex; flex-direction: column; gap: 28px; margin-top: 46px; }
+  .choice .o { display: flex; align-items: center; gap: 26px; text-align: left; font-size: 54px; font-weight: 700; padding: 26px 32px;
+               border-radius: 30px; background: rgba(12,10,18,.86); border: 4px solid; }
+  .choice .o b { flex: none; width: 84px; height: 84px; border-radius: 22px; display: grid; place-items: center; font-size: 60px; color: #0b0a10; }
+  .choice .a { border-color: #3ddc84; } .choice .a b { background: #3ddc84; }
+  .choice .b { border-color: #ff4b4b; } .choice .b b { background: #ff4b4b; }
+  .choice .c { margin-top: 40px; font-size: 50px; font-weight: 600; }
+  .choice .h { margin-top: 40px; font-size: 44px; font-weight: 600; opacity: .9; }
+  .choice .h span { display: inline-block; margin-top: 12px; background: #c81e1e; border-radius: 26px; padding: 12px 30px; font-size: 54px; font-weight: 700; }
+</style>
+<script type="importmap">
+{ "imports": { "three": "/node_modules/three/build/three.module.js", "three/addons/": "/node_modules/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<div id="ui"></div>
+<script type="module" src="main.js"></script>
+</body>
+</html>

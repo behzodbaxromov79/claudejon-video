@@ -1,0 +1,20 @@
+{
+  "language": "uz",
+  "series": "Qo'rqinchli hikoya",
+  "part": 1,
+  "title": "13-qavat",
+  "timer": "05:00",
+  "timer_speed": 1.4,
+  "handle": "@kanalingiz",
+  "hero": { "hair": "#3a2418", "shirt": "#2f3a5a" },
+  "scenes": [
+    { "id": "s0", "place": "elevator", "event": "none",    "text": "Soat uchda liftga yolg'iz kirding. Hamma uxlagan.", "highlight": ["uchda", "yolg'iz"] },
+    { "id": "s1", "place": "elevator", "event": "flicker", "text": "Chiroq lipillay boshladi. Tugmalar o'z-o'zidan yonmoqda.", "highlight": ["lipillay"] },
+    { "id": "s2", "place": "elevator", "event": "eyes",    "text": "Lift 13-qavatda to'xtadi. Bu binoda 13-qavat yo'q edi...", "highlight": ["13-qavatda", "yo'q"] },
+    { "id": "s3", "place": "corridor", "event": "door",    "text": "Eshik ochildi. Uzun yo'lak oxirida nimadir seni kutyapti.", "highlight": ["kutyapti"] },
+    { "id": "s4", "place": "corridor", "event": "shadow",  "text": "Qora soya sekin yaqinlashmoqda. Taymer tugashiga oz qoldi!", "highlight": ["soya", "taymer"] },
+    { "id": "s5", "place": "corridor", "event": "hand",    "text": "Kimdir yelkangga qo'l qo'ydi. Nima qilasan?", "highlight": ["qo'l"] }
+  ],
+  "choice": { "q": "NIMA QILASAN?", "a": "Liftga qaytib qochaman", "b": "Orqamga o'girilaman" },
+  "voice": { "voice": "muhriddin", "speed": 0.95, "lang": "uz" }
+}
